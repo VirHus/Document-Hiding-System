@@ -523,4 +523,4 @@ if __name__ == "__main__":
             admin.set_password("admin123")  # Change this to a secure password
             db.session.add(admin)
             db.session.commit()
-    app.run(host="0.0.0.0", port=os.environ.get("PORT", 5000))
+    app.run(debug=False, host='0.0.0.0')
