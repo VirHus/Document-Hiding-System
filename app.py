@@ -13,8 +13,8 @@ import shutil
 
 app = Flask(__name__)
 
-# Database Configuration
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:@localhost/flaskapp"
+# Database Configuration for SQLite
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///flaskapp.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SECRET_KEY"] = "your_secret_key"  # Change this to a secure secret key
 
